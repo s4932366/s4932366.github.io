@@ -97,7 +97,7 @@
 						<textarea data-template>
 							## Curva
 
-							Sean \\(a,b\in\mathbb{R}\\) y \\(m\in\mathbb{N}\\). Una curva es una función
+							Sean \\(a,b\in\mathbb{R}\\) y \\(m\in\mathbb{N}\\) con \\(a< b\\). Una curva es una función
 
 							\\[\sigma:[a,b]\longrightarrow \mathbb{R}^m\\]
 
@@ -136,6 +136,8 @@
 							\\[\Lambda(\sigma)=\int_{a}^{b}\\|\sigma^\prime(t)\\|\\;\mathrm{dt}\\]
 						</textarea>
 					</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)">
 					<section data-markdown>
 						<textarea data-template>
 
@@ -255,7 +257,8 @@
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							<p style="text-align: left;">\(\displaystyle\le \left\|\sum_{j=1}^m\int_{x_{i-1}}^{x_i}\sigma^\prime_j(t)\;\mathrm{dt}\;\; \mathbfsfup{e}_j\right\|+\left\|\sum_{j=1}^m\int_{x_{i-1}}^{x_i}\sigma^\prime_j(x_i)-\sigma^\prime_j(t)\;\mathrm{dt}\;\; \mathbfsfup{e}_j\right\|\)</p>
+							<p style="text-align: left;">\(\displaystyle\le \left\|\sum_{j=1}^m\int_{x_{i-1}}^{x_i}\sigma^\prime_j(t)\;\mathrm{dt}\;\; \mathbfsfup{e}_j\right\|\)</p>
+							<p style="text-align: left;">\(\displaystyle\phantom{=}+\left\|\sum_{j=1}^m\int_{x_{i-1}}^{x_i}\sigma^\prime_j(x_i)-\sigma^\prime_j(t)\;\mathrm{dt}\;\; \mathbfsfup{e}_j\right\|\)</p>
 							<p class="fragment fade-up fade-in-then-semi-out"  style="text-align: left;">\(\displaystyle\le \left\|\sum_{j=1}^m\Big(\sigma_j(x_i)-\sigma_j(x_{i-1})\Big)\mathbfsfup{e}_j\right\|+\varepsilon_0\Delta x_i\left\|\sum_{j=1}^m\mathbfsfup{e}_j\right\|\)</p>
 							<p class="fragment fade-up fade-in-then-semi-out"  style="text-align: left;">\(\displaystyle= \left\|\sigma(x_i)-\sigma(x_{i-1})\right\|+\varepsilon_0\Delta x_i\sqrt{m}\)</p>
 						</textarea>
