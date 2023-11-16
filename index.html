@@ -169,7 +169,7 @@
 							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(t\in[x_{i-1},x_i]\implies |t-x_i|\le|x_i-x_{i-1}|\le\|Q\|<\delta\)</p>
 							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(\phantom{t\in[x_{i-1},x_i]}\implies |\sigma^\prime_j(t)-\sigma^\prime_j(x_i)|<\varepsilon_0\)</p>
 							<p class="fragment fade-up fade-in" style="text-align: left;">\(\phantom{t\in[x_{i-1},x_i]}\implies |\sigma^\prime_j(t)|\le|\sigma^\prime_j(t)-\sigma^\prime_j(x_i)|+|\sigma^\prime_j(x_i)|\)</p>
-							<p class="fragment fade-up fade-in" style="text-align: left;">\(\phantom{t\in[x_{i-1},x_i]\implies }< |\sigma^\prime_j(t)|+\varepsilon_0\)</p>
+							<p class="fragment fade-up fade-in" style="text-align: left;">\(\phantom{t\in[x_{i-1},x_i]\implies }< |\sigma^\prime_j(x_i)|+\varepsilon_0\)</p>
 
 							<p class="fragment fade-up fade-in" >Entonces, podemos obtener las siguientes desigualdades:</p>
 						</textarea>
@@ -177,7 +177,7 @@
 					<section data-markdown>
 						<textarea data-template>
 							<p class="fragment fade-up fade-in" style="text-align: left;">\(\displaystyle\Lambda(Q,\sigma)= \sum_{i=1}^n\|\sigma(x_i)-\sigma(x_{i-1})\|\)</p>
-							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(\displaystyle\phantom{\Lambda(Q,\sigma)}= \sum_{i=1}^n\left\|\sum_{j=1}^m\Big(\sigma(x_i)-\sigma(x_{i-1})\Big)\mathbfsfup{e}_j\right\|\)</p>
+							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(\displaystyle\phantom{\Lambda(Q,\sigma)}= \sum_{i=1}^n\left\|\sum_{j=1}^m\Big(\sigma_j(x_i)-\sigma_j(x_{i-1})\Big)\mathbfsfup{e}_j\right\|\)</p>
 							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(\displaystyle\phantom{\Lambda(Q,\sigma)}= \sum_{i=1}^n\left\|\sum_{j=1}^m\sigma^\prime_j(r_{ij})\Delta x_i\mathbfsfup{e}_j\right\|,\;\;\;r_{ij}\in[x_{i-1},x_i]\)</p>
 						</textarea>
 					</section>
@@ -241,7 +241,7 @@
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							<p style="text-align: left;">\(\displaystyle\int_{x_{i-1}}^{x_i}\|\sigma^\prime(t)\|\;\mathrm{dt} \le \Delta x_i \left\|\sum_{j=1}^m(\sigma^\prime_j(x_i)+\varepsilon_0)\mathbfsfup{e}_j\right\|\)</p>
+							<p style="text-align: left;">\(\displaystyle\int_{x_{i-1}}^{x_i}\|\sigma^\prime(t)\|\;\mathrm{dt} \le \Delta x_i \left\|\sum_{j=1}^m\left(\left|\sigma^\prime_j(x_i)\right|+\varepsilon_0\right)\mathbfsfup{e}_j\right\|\)</p>
 							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(\displaystyle\phantom{\int_{x_{i-1}}^{x_i}\|\sigma^\prime(t)\|\;\mathrm{dt}}\le \Delta x_i \left\|\sum_{j=1}^m\sigma^\prime_j(x_i)\mathbfsfup{e}_j\right\|+\varepsilon_0\Delta x_i\left\|\sum_{j=1}^m\mathbfsfup{e}_j\right\|\)</p>
 							<p class="fragment fade-up fade-in-then-semi-out" style="text-align: left;">\(\displaystyle\phantom{\int_{x_{i-1}}^{x_i}\|\sigma^\prime(t)\|\;\mathrm{dt}}= \left\|\sum_{j=1}^m\sigma^\prime_j(x_i)\Delta x_i \mathbfsfup{e}_j\right\|+\varepsilon_0\Delta x_i\sqrt{m}\)</p>
 						</textarea>
